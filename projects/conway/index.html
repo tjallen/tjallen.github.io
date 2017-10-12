@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- endinject -->
+  </head>
+
+  <body>
+  <header></header>
+
+  <main>
+    
+  <div class="intro">
+    <h1>yet another conway's game of life</h1>
+
+    <p>Draw shapes on the canvas to create living cells or select from preset patterns below, then click start to progress through generations</p>
+    
+    <p>
+      <a href="https://github.com/tjallen/conway" title="Github repo">Github repo</a>
+    </p>
+  </div>
+    
+    <div class="board-wrap">
+      <div id="controls">
+        <div class="btn-group">
+          <h3 class="controls-label">Controls</h3>
+          <button id="start" class="toggle grouped">
+            Start
+          </button>
+          <button id="stop" class="toggle">
+            Stop
+          </button>
+          <button id="onestep">
+            +1 step
+          </button>
+          <button id="clear">
+            Clear board
+          </button>
+        </div>
+
+        <div class="shapes">
+          <div class="btn-group">
+            <h3 class="controls-label">Preset shapes</h3>
+            <button id="glidergun" class="grouped">
+              glidergun
+            </button>
+            <button id="glider" class="grouped">
+              glider
+            </button>
+            <button id="ten" class="grouped">
+              ten
+            </button>
+            <button id="tumbler" class="grouped">
+              tumbler
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="game">
+      </canvas>
+      
+    </div>
+
+    <h2 class="stats stats-generation">Generation:&nbsp;<span  id="gencounter"></span></h2>
+    <h2 class="stats stats-living">Living cells:&nbsp;<span id="cellcounter"></span></h2>
+
+  </main>
+
+  <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--inject:js-->
+    <script src="scripts/main.js"></script>
+    <!--endinject-->
+  </body>
+</html>
