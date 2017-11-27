@@ -958,12 +958,36 @@ button {
   width: 100%;
   box-shadow: 1px 1px 1px 1px rgba(45, 45, 45, 0.15); }
   button:hover {
-    box-shadow: 0px 10px 20px 1px rgba(45, 45, 45, 0.15); }
+    box-shadow: 0px 10px 10px 1px rgba(45, 45, 45, 0.15); }
   @media screen and (min-width: 576px) {
     button {
       font-size: 0.875rem;
       width: auto;
       display: inline-block; } }
+  button a {
+    color: #fff; }
+    button a:hover {
+      color: #fff; }
+  button svg.icon {
+    fill: #fff;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px 0 0; }
+    button svg.icon:hover {
+      fill: #fff; }
+
+.button-group {
+  display: block;
+  clear: both; }
+  .button-group::after {
+    display: block;
+    content: "";
+    clear: both; }
+  .button-group button {
+    clear: none;
+    position: relative;
+    float: left;
+    margin: 0 10px 20px 0; }
 
 div.centeredbutton-wrap {
   margin: 10px 0 20px;
